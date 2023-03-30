@@ -10,4 +10,11 @@ public class BinarySearchTree<T extends Comparable<T>> {
             return;
         }
     }
+    public void display(INode<T> currentPointer){
+        if (currentPointer == null)
+            return;
+        display(currentPointer.nextL);
+        System.out.print(currentPointer.data+" ");
+        display(currentPointer.nextR);
+    }
 }
