@@ -7,6 +7,10 @@ public class BinarySearchTreeMain {
         bst.add(56);
         bst.add(30);
         bst.add(70);
+        bst.add(63);
+
+        bst.search(bst.root,65);
+        bst.display(bst.root);
         bst.display(bst.root);
     }
 
